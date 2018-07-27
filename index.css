@@ -21,12 +21,14 @@ nav a {
 
 nav a:hover {
   color: orange;
+  text-decoration: none;
   transition: color .15s ease-in-out;
 }
 
 .login:hover {
   color: #000;
   background-color: orange;
+  text-decoration: none;
   transition: background-color .15s ease-in-out;
 }
 
@@ -68,23 +70,6 @@ nav a:hover {
   justify-content: center;
   align-items: center;
     }
-
-.wrapper {
-  width: 100vw;
-  background-color: rgba(14, 39, 86, 0.7);
-  padding-top: 2rem;
-}
-
-@media screen and (min-width: 768px) {
-  .wrapper h1 {
-    text-transform: uppercase;
-      }
-  
-  .wrapper {
-    width: 60%;
-    text-align: center;
-    }
-}
 
 
 h1 {
