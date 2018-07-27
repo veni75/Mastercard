@@ -1,7 +1,10 @@
+/*====NAVIGATION===*/
+
 nav {
   background-color: rgba(0,0,0, .9);
   padding: 1rem;
 }
+
 nav a {
   text-decoration: none;
   font-family: 'Space Mono', monospace;
@@ -10,19 +13,23 @@ nav a {
   display: block;
   padding: .5rem 1rem;
 }
-.sign-up {
-  border: 1px solid hsla(0,0%,100%,.2);
+
+.login {
+  border: 1px solid #fff;
   border-radius: 9999px;
 }
+
 nav a:hover {
-  color: hsl(0, 0%, 77%);
+  color: orange;
   transition: color .15s ease-in-out;
 }
-.sign-up:hover {
+
+.login:hover {
   color: #000;
-  background-color: #fff;
+  background-color: orange;
   transition: background-color .15s ease-in-out;
 }
+
 @media (min-width: 768px) {
   nav {
     position: fixed;
@@ -31,14 +38,14 @@ nav a:hover {
     width: 100%;
   }
 }
+
 @media (min-width: 768px) {
   nav a {
-    float: right;
-  }
-  .home {
     float: left;
   }
-}
+  }
+
+
 @media (min-width: 768px) {
   /* Clearfix */
     nav::after {
@@ -47,21 +54,8 @@ nav a:hover {
     display: block;
   }
 }
-section {
-  font-size: 1rem;
-  font-family: 'Space Mono', monospace;
-  }
-@media (min-width: 768px) {
-  section {
-    width: 60%;
-    margin: 5.25rem auto 1.25rem;
-  }
-}
-p {
-  margin-bottom: 1.25rem;
-  padding: .5rem;
-}
 
+/*===HEADER===*/
 
 .cover {
   background: url('assets/wave-1905610_1280.png') no-repeat center/cover;
@@ -92,14 +86,6 @@ p {
     }
 }
 
-.suti {
- background-color: black;
-  color: white;
-  
-}
-body {
-  background: linear-gradient(rgb(14, 39, 86), rgb(45, 120, 240));
-}
 
 h1 {
   font-size: 7rem;
@@ -107,37 +93,45 @@ h1 {
   font-weight: 600;
  }
 
-.cim {
-  display: block;
-  color: rgb(255, 181, 102);
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  font-weight: 550;
-}
+/*===LINKS====*/
 
-a, p {
+.feher-narancs {
   line-height: 3rem;
-  color: rgb(255, 230, 204);
+  color: white;
   font-size: 2rem;
 }
 
-a:hover {
-  color: rgb(255, 181, 102);
+.feher-narancs:hover {
+  color: orange;
 }
 
-ul {
-  list-style-type: none;
+.feher-fekete {
+  line-height: 3rem;
+  color: white;
+  font-size: 2rem;
 }
 
-.hidden {display: none;}
+.feher-fekete:hover {
+  color: black;
+}
+
+.fekete-narancs {
+  line-height: 3rem;
+  color: black;
+  font-size: 2rem;
+}
+
+.fekete-narancs:hover {
+  color: orange;
+}
+
+
 
 /*===BOX===*/
 
 .box {
-  border: 2px solid lightblue;
+  border: 2px solid black;
   padding: 1rem;
   margin: 1rem;
-  box-shadow: rgba(179, 230, 255, 0.7) 8px 8px 10px;
-  border-radius: 4px;
+  
 }
