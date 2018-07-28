@@ -80,9 +80,8 @@ h1 {
 /*===LINKS====*/
 
 .feher-narancs {
-  line-height: 3rem;
   color: white;
-  font-size: 2rem;
+  
 }
 
 .feher-narancs:hover {
@@ -90,9 +89,9 @@ h1 {
 }
 
 .feher-fekete {
-  line-height: 3rem;
+  
   color: white;
-  font-size: 2rem;
+  
 }
 
 .feher-fekete:hover {
@@ -100,9 +99,9 @@ h1 {
 }
 
 .fekete-narancs {
-  line-height: 3rem;
+  
   color: black;
-  font-size: 2rem;
+  
 }
 
 .fekete-narancs:hover {
@@ -122,6 +121,16 @@ h1 {
   background-color: orange;
 }
 
+.orangeletter{
+  color: orange;
+}
+
 .row{
   height: 80vh;
+}
+
+.kör{
+  border-radius: 50%;
+  background-color: orange;
+  color: white;
 }
