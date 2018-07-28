@@ -38,6 +38,11 @@ nav a:hover {
   margin: .5rem;
 }
 
+.logo{
+  width: 5rem;
+  height: 5rem;
+}
+
 @media (min-width: 768px) {
   nav {
     position: fixed;
