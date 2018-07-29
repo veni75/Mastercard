@@ -1,9 +1,8 @@
 /*====NAVIGATION===*/
 
 nav {
-  background-color: rgba(0,0,0, .9);
-  text-align: center;
-  padding: 2rem;
+  background-color: rgba(0,0,0, .8);
+  
 }
 
 nav a {
@@ -11,8 +10,7 @@ nav a {
   font-family: 'Space Mono', monospace;
   text-align: center;
   color: #fff;
-  display: block;
-  padding: .5rem 1rem;
+  padding: 1rem 1rem;
 }
 
 .login {
@@ -29,27 +27,29 @@ nav a:hover {
 .login:hover {
   color: #000;
   background-color: orange;
+  border: 1px solid orange;
   text-decoration: none;
-  transition: background-color .15s ease-in-out;
+  transition: background-color .5s ease-in-out;
 }
 
 .verti {
   display: inline;
-  margin: .5rem;
+  margin: .2rem;
+  color: white;
 }
 
 .logo{
-  width: 5rem;
-  height: 5rem;
+  width: 7rem;
+  height: 7rem;
+  
+}
+
+.glyphicons{
+  color: white;
 }
 
 @media (min-width: 768px) {
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
+  
 }
 
 
@@ -58,23 +58,14 @@ nav a:hover {
 
 /*===VIDEO===*/
 
-figure {
-	height: 0;
-	padding-bottom: 56.25%; /* 16:9 aspect ratio */
-	position: relative;
-}
-
-figure iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-}
-
 
 h1 {
-  font-size: 7rem;
+  font-size: 4rem;
+  font-weight: 600;
+ }
+
+h2 {
+  font-size: 4rem;
   font-weight: 600;
  }
 
@@ -109,7 +100,18 @@ h1 {
   color: orange;
 }
 
+.video{
+  text-decoration: underline;
+}
 
+.video:hover{
+  text-decoration: underline;
+}
+
+.button{
+  display: block;
+  text-align: center;
+}
 .white{
   color: white;
 }
@@ -130,8 +132,12 @@ h1 {
   height: 80vh;
 }
 
-.kör{
+.circle{
   border-radius: 50%;
   background-color: orange;
   color: white;
+}
+
+.container{
+  margin: 0;
 }
