@@ -1,7 +1,7 @@
 /*====NAVIGATION===*/
 
 nav {
-  background-color: rgba(0,0,0, .8);
+  background-color: rgba(0,0,0, .6);
   
 }
 
@@ -41,10 +41,11 @@ nav a:hover {
 .logo{
   width: 7rem;
   height: 7rem;
-  
+  margin-top: 5rem;
+  margin-left: 5rem;
 }
 
-.glyphicons{
+.glyphicon{
   color: white;
 }
 
@@ -65,8 +66,9 @@ h1 {
  }
 
 h2 {
-  font-size: 4rem;
-  font-weight: 600;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-top: 6rem;
  }
 
 /*===LINKS====*/
@@ -88,6 +90,7 @@ h2 {
 
 .feher-fekete:hover {
   color: black;
+  text-decoration: none;
 }
 
 .fekete-narancs {
@@ -98,20 +101,41 @@ h2 {
 
 .fekete-narancs:hover {
   color: orange;
+  text-decoration: none;
 }
 
 .video{
   text-decoration: underline;
+  
 }
 
 .video:hover{
   text-decoration: underline;
 }
 
+ul {
+  list-style-type: none;
+  margin-left: 5rem;
+  line-height: 5rem;
+}
+
+.right{
+  float: right;
+  margin-right: 5rem;
+  margin-top: 5rem;
+ }
+
+.right::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
 .button{
   display: block;
-  text-align: center;
+  margin: 2rem auto;
 }
+
 .white{
   color: white;
 }
@@ -120,6 +144,10 @@ h2 {
   color: black;
 }
 
+.gray{
+  background-color: lightgray;
+  padding-left: 3rem;
+}
 .orange{
   background-color: orange;
 }
@@ -128,16 +156,65 @@ h2 {
   color: orange;
 }
 
-.row{
-  height: 80vh;
-}
-
 .circle{
   border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
   background-color: orange;
   color: white;
+  font-size: 3rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
 }
 
 .container{
   margin: 0;
+}
+
+.cover {
+  background: url('http:mvm-cashcard.hu/img/mvm_banner_cashcard_02.svg') no-repeat center center;
+  
+  display: table;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.hero-text-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.hero-text {
+  margin: 2rem auto;
+  padding: .625rem;
+  color: black;
+  
+}
+
+.tagline {
+  font-size: 1.5rem;
+  width: 35rem;
+  margin-left: 5rem;
+  margin-top: -20rem;
+}
+
+.tagline::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.515625rem;
+  margin: .5rem auto;
+}
+
+.glyphicon{
+  display: block;
+  margin-left: 5rem;
+    line-height: 4rem;
+}
+
+.store{
+  width: 10rem;
+  height: 4rem;
 }

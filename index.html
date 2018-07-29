@@ -25,9 +25,8 @@
     <a class="hidden" href="#">EN</a>
     <hr class="verti white hidden">
     <a class="hidden" href="#">HU</a>
-    <span class="glyphicon glyphicon-show-lines"></span>
-    <span class="glyphicon glyphicon-menu-hamburger"></span>
-    <i class="far fa-bars"></i>
+    
+    <span class="glyphicon glyphicon-menu-hamburger right" aria-hidden="true"></span>
   </nav>
   
    <div class="embed-responsive embed-responsive-16by9">
@@ -74,9 +73,14 @@
         <div>
           <a class="feher-fekete" href="#"><img class="button" src="http:mvm-cashcard.hu/img/play-button.png"></a>
           <a class="feher-fekete video" href="https://www.youtube.com/watch?v=Nwl_EZxAKWQ">Video lejátszása</a>
-          <img src="http:mvm-cashcard.hu/img/mvm_banner_cashcard_02.svg" alt="cashcard">
-          <p>Vedd meg MVM CashCardodat 2 perc alatt az Arénában felállított kioskokból és fizess vele bárhol a világon!</p> 
-          
+          <div class="cover">
+      <div class="hero-text-wrapper">
+        <div class="hero-text">
+          <div class="tagline text-justify">Vedd meg MVM CashCardodat 2 perc alatt az Arénában felállított kioskokból és fizess vele bárhol a világon!</div>
+        </div>
+      </div>
+  </div>
+
         </div>
       </div>
       <div class="col-xs-12 col-sm-6">
@@ -87,17 +91,17 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-sm-6">
+      <div class="col-xs-12 col-sm-6 gray">
         <div>
           <img class="logo" src="http:mvm-cashcard.hu/img/mvm_logo_black.svg" alt="logo">
           
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6">
+      <div class="col-xs-12 col-sm-6 gray">
         <div>
           <h2 id="MVM">Miért jó az MVM CashCard?</h2>
           <p>Forint alapú paypass funkcióval ellátott Prepaid Mastercard</p>
-          <hr>
+          <hr class="black">
           <p>Bárhol használhatod a világon, ahol Mastercardot elfogadnak</p>
           <hr>
           <p>Az applikációban valós időben követheted a kártyatranzakcióidat</p>
@@ -109,60 +113,85 @@
         </div>
       </div>
     </div>
+    
     <div class="row">
       <div class="col-xs-12 col-sm-6">
-        <h3 id="alkalmazas">Alkalmazás letöltése</h3>
-          <div class="row">
-            <div class="col-xs-2 col-sm-1">
-              <p class="circle">1</p>
-            </div>
-      <div class="col-xs-10 col-sm-5">
-          <h3 class="orangeletter">Töltsd le és telepítsd</h3>
-          <p>Válaszd ki a telefonodhoz megfelelő iOS, vagy Android SimplonWallet alkalmazást, töltsd le, majd telepítsd!</p>
-          <h3 class="orangeletter">Lépj be és regisztrálj</h3>
-          <p>Indítsd el az alkalmazást, majd a szükséges adatok megadásával regisztráld magad!</p>
-            </div>
-      <div class="col-xs-2 col-sm-1">
-        <p class="circle">2</p>
-            </div>
-        <div class="col-xs-10 col-sm-5">
-          <h3 class="orangeletter">Add hozzá MVM CashCardodat!</h3>
-          <p>Add hozzá MVM CashCardodat, így később csak egy érintés lesz a vásárlás!</p>
-          <h3 class="orangeletter">Használd a kártyádat!</h3>
-          <p>Használd a Cashcardodat az Aréna területén és bárhol a világon!</p>
-          <p>Töltsd le az appot az App Store-ból vagy a Google Play Áruházból!</p>
-            </div>
+        <h3 id="alkalmazas" class="text-center">Alkalmazás letöltése</h3>
+        <div class="row">
+          <div class="col-xs-2 col-sm-1">
+            <p class="circle text-center">1.</p>
           </div>
+          <div class="col-xs-10 col-sm-5">
+            <h3 class="orangeletter">Töltsd le és telepítsd</h3>
+            <p>Válaszd ki a telefonodhoz megfelelő iOS, vagy Android SimplonWallet alkalmazást, töltsd le, majd telepítsd!</p>
+          </div>
+          <div class="col-xs-2 col-sm-1">
+            <p class="circle text-center">2.</p>
+          </div>
+          <div class="col-xs-10 col-sm-5">
+            <h3 class="orangeletter">Lépj be és regisztrálj</h3>
+            <p>Indítsd el az alkalmazást, majd a szükséges adatok megadásával regisztráld magad!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2 col-sm-1">
+            <p class="circle text-center">3.</p>
+          </div>
+          <div class="col-xs-10 col-sm-5">
+            <h3 class="orangeletter">Add hozzá MVM CashCardodat!</h3>
+            <p>Add hozzá MVM CashCardodat, így később csak egy érintés lesz a vásárlás!</p>
+          </div>
+          <div class="col-xs-2 col-sm-1">
+            <p class="circle text-center">4.</p>
+          </div>
+          <div class="col-xs-10 col-sm-5">
+            <h3 class="orangeletter">Használd a kártyádat!</h3>
+            <p>Használd a Cashcardodat az Aréna területén és bárhol a világon!</p>
           
+          </div>
+          <p class="hidden">Töltsd le az appot az App Store-ból vagy a Google Play Áruházból!</p>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-sm-3">
+            <img class="store" src="http://mvm-cashcard.hu/img/applestore.png">
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <img class="store" src="http://mvm-cashcard.hu/img/playstore.png">
+          </div>
+        </div>
         
-      </div>
-      <div class="col-xs-12 col-sm-6">
+      <div class="col-xs-12 col-sm-6 hidden">
         <div>
           <img src="">
+          
         </div>
       </div>
     </div>
+    
+    
     <div class="row orange">
       <div class="col-xs-12 col-sm-4">
         <div>
           <img class="logo" src="http:mvm-cashcard.hu/img/mvm_logo.svg" alt="logo">
-          <p>Az MVM Magyar Villamos Művek Zrt a Simplon Zrt. együttműködő partnere. www.simplon.xyz © 2018 Simplon Zrt. - MVM Group - Minden jog védve.</p>
-          <p>© 2018 Simplon Zrt. - MVM Group - Minden jog védve.</p>
+          <p class="white hidden">Az MVM Magyar Villamos Művek Zrt a Simplon Zrt. együttműködő partnere. www.simplon.xyz © 2018 Simplon Zrt. - MVM Group - Minden jog védve.</p>
+          <p class="white hidden">© 2018 Simplon Zrt. - MVM Group - Minden jog védve.</p>
         </div>
       </div>
       <div class="col-xs-12 col-sm-4">
         <div>
-          <a class="feher-fekete" href="#">Gyakran ismételt kérdések</a>
-          <a class="feher-fekete" href="#">Díjtáblázat</a>
-          <a class="feher-fekete" href="#">Feltöltési módok</a>
+          <ul>
+            <li><a class="feher-fekete" href="#">Gyakran ismételt kérdések</a></li>
+            <li><a class="feher-fekete" href="#">Díjtáblázat</a></li>
+            <li><a class="feher-fekete" href="#">Feltöltési módok</a></li>
+          </ul>
         </div>
       </div>
       <div class="col-xs-12 col-sm-4">
-        <div>
-          <i class="fal fa-envelope"></i>
-          <i class="fal fa-phone"></i>
-          <span class="glyphicon glyphicon-envelope"></span><a class="feher-fekete" href="#">help@simplon.xyz</a>
-          <span class="glyphicon glyphicon-call-ringtone"></span><p>+36 1 733 3111</p>
+        <div class="contact">
+          <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+          <a class="feher-fekete" href="#">help@simplon.xyz</a>
+          <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+          <p class="white">+36 1 733 3111</p>
         </div>
       </div>
     </div>
