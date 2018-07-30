@@ -1,8 +1,7 @@
 /*====NAVIGATION===*/
 
 nav {
-  background-color: rgba(0,0,0, .9);
-  
+  background-color: rgba(0,0,0, .9);  
 }
 
 nav a {
@@ -49,12 +48,27 @@ nav a:hover {
   color: white;
 }
 
-.hidden{
+.hidde{
   display: none;
 }
 
 @media (min-width: 768px) {
   
+  .hidde{
+    display: inline-block;
+      }
+  
+  .right{
+    display: none;
+  }
+  
+  .gomb{
+    display: none;
+  }
+  
+  .middle{
+  margin-top: 30rem;
+}
 }
 
 
@@ -135,6 +149,10 @@ ul {
   clear: both;
 }
 
+.left{
+  float: left;
+}
+
 .button{
   display: block;
   margin: 2rem auto;
@@ -177,22 +195,21 @@ ul {
 /*===ARENA===*/
 
 .cover1 {
-  background: url('http:mvm-cashcard.hu/img/mvm_banner_arena_01.svg') no-repeat center center;  
+  background: url('http:mvm-cashcard.hu/img/mvm_banner_arena_01.svg') no-repeat;
+  background-size: auto;
+  background-position: 50% 20%;
   display: table;
   text-align: left;
   height: 100vh;
-  width: 100vw;
-  padding: 4rem;
+  width: 40vw;  
 }
 
-.hero-text-wrapper1 {
+.text-wrapper1 {
   display: table-cell;
   vertical-align: middle;
 }
 
-.hero-text1 {
-  margin: 2rem auto;
-  padding: .625rem;
+.text1 {  
   color: black;  
 }
 
@@ -200,7 +217,7 @@ ul {
   font-size: 1.5rem;
   width: 35rem;
   margin-left: 5rem;
-  margin-top: -20rem;
+  margin-top: -30rem;
 }
 
 .arena-big{
@@ -214,30 +231,28 @@ ul {
 }
 
 .cover2 {
-  background: url('http:mvm-cashcard.hu/img/mvm_banner_cashcard_02.svg') no-repeat center center;  
+  background: url('http:mvm-cashcard.hu/img/mvm_banner_cashcard_02.svg') no-repeat center center;
+  background-position: 50% 20%;
   display: table;
   text-align: center;
   height: 100vh;
-  width: 100vw;
+  width: 40vw;
 }
 
-.hero-text-wrapper2 {
+.text-wrapper2 {
   display: table-cell;
   vertical-align: middle;
 }
 
-.hero-text2 {
-  margin: 2rem auto;
-  padding: .625rem;
+.text2 {
   color: black;  
 }
 
 .tagline2 {
   font-size: 1.5rem;
   width: 35rem;
-  margin-left: 5rem;
-  margin-top: -20rem;
-}
+  margin: -30rem 5rem 0 5rem;
+  }
 
 .glyphicon{
   padding: 2rem;
@@ -249,6 +264,8 @@ ul {
   height: 4rem;
   margin: 3rem 5rem;
 }
+
+
 
 /*===MVM===*/
 
@@ -263,4 +280,31 @@ ul {
   content: "";
   background-color: black;
   height: 1px;  
+}
+
+.card{
+  width: 80vw;
+  height: 40vh;
+}
+
+.card {    
+    position: relative;
+    -webkit-animation-name: card; 
+    -webkit-animation-duration: 4s; 
+    animation-name: card;
+    animation-duration: 4s;
+}
+
+
+@-webkit-keyframes card {
+    0%   {left:0px; top:0px;}
+    100%  {left:200px; top:0px;}
+    
+}
+
+
+@keyframes card {
+    0%   {left:0px; top:0px;}
+    100%  {left:200px; top:0px;}
+    
 }
