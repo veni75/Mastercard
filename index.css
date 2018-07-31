@@ -1,3 +1,35 @@
+/* =====GENERAL STYLES========*/
+
+h1 {
+  font-size: 4rem;
+  font-weight: 600;
+ }
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+ }
+
+.video{
+  display: block;
+  text-align: center;
+}
+
+.button{
+  display: block;
+  margin: 2rem auto;
+}
+
+.white{
+  color: white;
+}
+
+.black{
+  color: black;
+}
+
 /*====NAVIGATION===*/
 
 nav {
@@ -18,15 +50,15 @@ nav a {
 }
 
 nav a:hover {
-  color: orange;
+  color: rgb(255,185,0);
   text-decoration: none;
   transition: color .15s ease-in-out;
 }
 
 .login:hover {
   color: #000;
-  background-color: orange;
-  border: 1px solid orange;
+  background-color: rgb(255,185,0);
+  border: 1px solid  rgb(255,185,0);
   text-decoration: none;
   transition: background-color .5s ease-in-out;
 }
@@ -52,6 +84,18 @@ nav a:hover {
   display: none;
 }
 
+.right{
+  float: right;
+  margin-right: 5rem;
+  margin-top: 5rem;
+ }
+
+.right::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
 @media (min-width: 768px) {
   
   .hidde{
@@ -60,44 +104,27 @@ nav a:hover {
   
   .right{
     display: none;
+  }  
   }
+
+/*===HEADER===*/
+
+.gomb{
+    display: block;
+  }
+
+@media (min-width: 768px) {
   
   .gomb{
     display: none;
   }
-  
-  .middle{
-  margin-top: 30rem;
 }
-}
-
-
-
-/*===HEADER===*/
-
-/*===VIDEO===*/
-
-
-h1 {
-  font-size: 4rem;
-  font-weight: 600;
- }
-
-h2 {
-  font-size: 3rem;
-  font-weight: 800;
-  margin-top: 6rem;
-  margin-bottom: 4rem;
- }
 
 .black-bg{
   background-color: black;
 }
 
-.video{
-  display: block;
-  text-align: center;
-}
+
 
 /*===LINKS====*/
 
@@ -107,8 +134,7 @@ h2 {
 }
 
 .feher-narancs:hover {
-  color: orange;
-  
+  color:  rgb(255,185,0);
 }
 
 .feher-fekete {  
@@ -125,7 +151,7 @@ h2 {
 }
 
 .fekete-narancs:hover {
-  color: orange;
+  color:  rgb(255,185,0);
   text-decoration: none;
 }
 
@@ -137,52 +163,23 @@ ul {
   line-height: 5rem;
 }
 
-.right{
-  float: right;
-  margin-right: 5rem;
-  margin-top: 5rem;
- }
-
-.right::after {
-  display: block;
-  content: "";
-  clear: both;
-}
-
-.left{
-  float: left;
-}
-
-.button{
-  display: block;
-  margin: 2rem auto;
-}
-
-.white{
-  color: white;
-}
-
-.black{
-  color: black;
-}
-
 .gray{
-  background-color: lightgray;
+  background-color: rgb(240,240,240);
   padding-left: 3rem;
 }
 .orange{
-  background-color: orange;
+  background-color:  rgb(255,185,0);
 }
 
 .orangeletter{
-  color: orange;
+  color:  rgb(255,185,0);
 }
 
 .circle{
   border-radius: 50%;
   width: 6rem;
   height: 6rem;
-  background-color: orange;
+  background-color:  rgb(255,185,0);
   color: white;
   font-size: 3rem;
   margin-top: 2rem;
@@ -192,6 +189,7 @@ ul {
 .container{
   margin: 0;
 }
+
 /*===ARENA===*/
 
 .cover1 {
@@ -201,19 +199,17 @@ ul {
   display: table;
   text-align: left;
   height: 100vh;
-  width: 40vw;  
+  width: 40vw; 
+  
 }
 
 .text-wrapper1 {
   display: table-cell;
   vertical-align: middle;
-}
+  }
 
 .text1 {  
   color: black;  
-}
-
-.tagline1 {
   font-size: 1.5rem;
   width: 35rem;
   margin-left: 5rem;
@@ -230,11 +226,20 @@ ul {
   width: 30rem;
 }
 
+@media (min-width: 768px) {
+  
+  .middle{
+  margin-top: 30rem;
+}
+}
+
+/*====MVM HOGYAN====*/
+
 .cover2 {
   background: url('http:mvm-cashcard.hu/img/mvm_banner_cashcard_02.svg') no-repeat center center;
   background-position: 50% 20%;
   display: table;
-  text-align: center;
+  text-align: left;
   height: 100vh;
   width: 40vw;
 }
@@ -254,20 +259,14 @@ ul {
   margin: -30rem 5rem 0 5rem;
   }
 
-.glyphicon{
-  padding: 2rem;
-  margin-left: 3rem;
-  }
-
-.store{
-  width: 10rem;
-  height: 4rem;
-  margin: 3rem 5rem;
+@media (min-width: 768px) {
+  
+  .hiddenen{
+  display: none;
+}
 }
 
-
-
-/*===MVM===*/
+/*===MVM MIÉRT====*/
 
 .why{
  margin: 0;
@@ -283,8 +282,8 @@ ul {
 }
 
 .card{
-  width: 80vw;
-  height: 40vh;
+  width: 90vw;
+  height: 50vh;
 }
 
 .card {    
@@ -308,3 +307,45 @@ ul {
     100%  {left:200px; top:0px;}
     
 }
+
+/*====ALKALMAZÁS====*/
+
+.store{
+  width: 10rem;
+  height: 4rem;
+  margin: 3rem 5rem;
+}
+
+.phone{
+  width: 90vw;
+  height: 50vh;
+}
+
+.phone {    
+    position: relative;
+    -webkit-animation-name: phone; 
+    -webkit-animation-duration: 4s; 
+    animation-name: phone;
+    animation-duration: 4s;
+}
+
+
+@-webkit-keyframes phone {
+    0%   {left:200px; top:0px;}
+    100%  {left:0px; top:0px;}
+    
+}
+
+
+@keyframes phone {
+    0%   {left:0px; top:0px;}
+    100%  {left:200px; top:0px;}
+    
+}
+
+/*====FOOTER====*/
+
+.glyphicon{
+  padding: 2rem;
+  margin-left: 3rem;
+  }
