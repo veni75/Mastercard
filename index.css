@@ -1,20 +1,29 @@
 /* =====GENERAL STYLES========*/
 
 h1 {
-  font-size: 4rem;
+  font-size: 4.3rem;
   font-weight: 600;
- }
+   }
 
 h2 {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 1000;
   margin-top: 6rem;
-  margin-bottom: 4rem;
+  margin-bottom: 4rem;  
  }
 
 .video{
   display: block;
   text-align: center;
+  font-size: 2rem;
+}
+
+.montserrat, .video, h2, h3{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nunito, h1{
+  font-family: 'Nunito', sans-serif;
 }
 
 .button{
@@ -38,10 +47,10 @@ nav {
 
 nav a {
   text-decoration: none;
-  font-family: 'Space Mono', monospace;
   text-align: center;
   color: #fff;
-  padding: 1rem 1rem;
+  padding: 0.7rem 2.4rem;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .login {
@@ -109,9 +118,33 @@ nav a:hover {
 
 /*===HEADER===*/
 
+.black-bg{
+  background-color: black;
+}
+
 .gomb{
     display: block;
   }
+
+.line::after {
+  display: block;
+  content: "";
+  background-color: white;
+  width: 20rem;
+  height: 1px;
+  margin-left: 5rem;
+  
+}
+
+.line::after:hover {
+  display: block;
+  content: "";
+  background-color: orange;
+  width: 20rem;
+  height: 1px;
+  margin-left: 5rem;
+  
+}
 
 @media (min-width: 768px) {
   
@@ -130,11 +163,12 @@ nav a:hover {
 
 .feher-narancs {
   color: white;
-  text-decoration: underline;
+  
 }
 
 .feher-narancs:hover {
   color:  rgb(255,185,0);
+  text-decoration: none;
 }
 
 .feher-fekete {  
@@ -219,15 +253,21 @@ ul {
 .arena-big{
   font-size: 2.2rem;
   line-height: 5rem;
+  font-weight: 600;
 }
 
 .arena-small{
   font-size: 1.7rem;
   width: 30rem;
+  font-weight: 600;
+}
+
+
+.padding{
+  padding: 3rem;
 }
 
 @media (min-width: 768px) {
-  
   .middle{
   margin-top: 30rem;
 }
@@ -257,6 +297,7 @@ ul {
   font-size: 1.5rem;
   width: 35rem;
   margin: -30rem 5rem 0 5rem;
+  font-weight: 600;
   }
 
 @media (min-width: 768px) {
@@ -268,6 +309,9 @@ ul {
 
 /*===MVM MIÉRT====*/
 
+.padding2{
+  margin: 3rem 0;
+}
 .why{
  margin: 0;
   padding: 0;
