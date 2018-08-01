@@ -349,7 +349,6 @@ ul {
 @keyframes card {
     0%   {left:0px; top:0px;}
     100%  {left:200px; top:0px;}
-    
 }
 
 /*====ALKALMAZÁS====*/
@@ -361,8 +360,9 @@ ul {
 }
 
 .phone{
-  width: 90vw;
+  width: 50vw;
   height: 50vh;
+  margin-top: 20rem;
 }
 
 .phone {    
@@ -373,18 +373,14 @@ ul {
     animation-duration: 4s;
 }
 
-
 @-webkit-keyframes phone {
     0%   {left:200px; top:0px;}
     100%  {left:0px; top:0px;}
-    
 }
 
-
 @keyframes phone {
-    0%   {left:0px; top:0px;}
-    100%  {left:200px; top:0px;}
-    
+    0%   {left:200px; top:0px;}
+    100%  {left:0px; top:0px;
 }
 
 /*====FOOTER====*/
@@ -393,3 +389,7 @@ ul {
   padding: 2rem;
   margin-left: 3rem;
   }
+
+.mini{
+  font-size: 0.8rem;
+}
