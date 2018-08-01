@@ -1,13 +1,13 @@
 /* =====GENERAL STYLES========*/
 
 h1 {
-  font-size: 4.3rem;
+  font-size: 2.3rem;
   font-weight: 600;
    }
 
 h2 {
   font-size: 3rem;
-  font-weight: 1000;
+  font-weight: 900;
   margin-top: 6rem;
   margin-bottom: 4rem;  
  }
@@ -38,6 +38,14 @@ h2 {
 .black{
   color: black;
 }
+
+@media (min-width: 768px) {
+  
+  h1 {
+  font-size: 4.3rem;
+  font-weight: 800;
+   }
+  }
 
 /*====NAVIGATION===*/
 
@@ -118,33 +126,33 @@ nav a:hover {
 
 /*===HEADER===*/
 
-.black-bg{
-  background-color: black;
-}
-
 .gomb{
     display: block;
   }
 
-.line::after {
-  display: block;
-  content: "";
-  background-color: white;
-  width: 20rem;
-  height: 1px;
-  margin-left: 5rem;
+.line{
+  text-decoration: underline;
+}
+
+.line:hover{
+  text-decoration: underline;
+}
+
+.header-video{
+  position:relative;
+  width:100vw;
+  height:100vh;
   
 }
 
-.line::after:hover {
-  display: block;
-  content: "";
-  background-color: orange;
-  width: 20rem;
-  height: 1px;
-  margin-left: 5rem;
-  
-}
+#texted { 
+  position:absolute;
+  width:100%;
+  height:100px;
+  left:0;
+  top:0;
+  z-index:2000;
+  background-color:rgba(0,0,0,0.8); }
 
 @media (min-width: 768px) {
   
@@ -152,11 +160,6 @@ nav a:hover {
     display: none;
   }
 }
-
-.black-bg{
-  background-color: black;
-}
-
 
 
 /*===LINKS====*/
