@@ -43,7 +43,10 @@ h2 {
   color: black;
 }
 
-
+.orange{
+  background-color: rgb(255,185,0);
+  z-index:-2;
+}
 
 @media (min-width: 768px) {
   
@@ -178,11 +181,11 @@ HEADER
 }
 
 
-/*===
+/*========
 
 LINKS
 
-====*/
+===========*/
 
 .feher-narancs {
   color: white;
@@ -211,37 +214,6 @@ LINKS
   text-decoration: none;
 }
 
-
-
-ul {
-  list-style-type: none;
-  margin-left: 5rem;
-  line-height: 5rem;
-}
-
-.gray{
-  background-color: rgb(240,240,240);
-  padding-left: 3rem;
-}
-.orange{
-  background-color: rgb(255,185,0);
-  z-index:-2;
-}
-
-.orangeletter{
-  color:  rgb(255,185,0);
-}
-
-.circle{
-  border-radius: 50%;
-  width: 6rem;
-  height: 6rem;
-  background-color:  rgb(255,185,0);
-  color: white;
-  font-size: 3rem;
-  margin-top: 2rem;
-  padding-top: 1rem;
-}
 
 /*========
 
@@ -295,12 +267,7 @@ ARENA
 @media (min-width: 768px) {
   
   
-  .play-gomb{  
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    z-index: 1;
-}
+  
 }
 
 
@@ -335,6 +302,11 @@ MVM HOGYAN
 MVM MIÉRT
 
 ==========*/
+
+.gray{
+  background-color: rgb(240,240,240);
+  padding-left: 3rem;
+}
 
 .padding2{
   margin: 3rem 0;
@@ -384,6 +356,10 @@ ALKALMAZÁS
 
 ==========*/
 
+.orangeletter{
+  color:  rgb(255,185,0);
+}
+
 .store{
   width: 10rem;
   height: 4rem;
@@ -402,6 +378,17 @@ ALKALMAZÁS
     -webkit-animation-duration: 4s; 
     animation-name: phone;
     animation-duration: 4s;
+}
+
+.circle{
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  background-color:  rgb(255,185,0);
+  color: white;
+  font-size: 3rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
 }
 
 @-webkit-keyframes phone {
@@ -433,6 +420,12 @@ FOOTER
   margin: 1rem 0;
 }
 
+ul {
+  list-style-type: none;
+  margin-left: 5rem;
+  line-height: 5rem;
+}
+
 /*=====
 
 GYIK
@@ -450,29 +443,55 @@ GYIK
   margin-left: 5rem 25%;
 }
 
-.panel {
+/*=====
+
+MENU
+
+=======*/
+
+.panel{
   display: none;
-  
 }
 
-.activepanel {
+.activepanel{
   display: block;
-  
 }
 
-#panel2{
-  background-color: orange;
+#panel2, .nav2{
+  background-color: rgb(255,185,0);
 }
 
-#panel2 a, a:hover{
+.nav2 a, .nav2 a:hover{
   color: white;
   text-align: center;
   display: block;
   font-size: 2rem;
   text-decoration: none;
+  padding: 2rem auto;
+  font-family: 'Titillium Web', sans-serif;
+  vertical-align: middle;
 }
 
-#panel2 p{
-  color: white;
+.right2{
   float: right;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+ }
+
+.right2::after {
+  display: block;
+  content: "";
+  clear: both;
 }
+#panel2{
+background:rgb(255,185,0);
+height:100vh;
+  width:100vw;
+  position:absolute;
+  z-index: 3000;
+}
+
+.middle2{
+  margin-top: 30rem;
+}
+
