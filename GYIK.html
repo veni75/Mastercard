@@ -25,7 +25,7 @@
     <a class="hidden1" href="#alkalmazas"><b>Alkalmazás letöltése</b></a>
     <a class="hidden1" href="#MVM"><b>MVM</b> Cashcard</a>
     <a class="hidden1" href="GYIK.html">GYIK</a>
-    <a class="login hidden1" href="#">Login</a>
+    <a class="login hidden1" href="login.html">Login</a>
     <a class="hidden1" href="#">EN</a>
     <span>|</span>
     <a class="hidden1" href="#">HU</a>    
@@ -34,30 +34,41 @@
 
   
   
-  <h1>Gyakran ismételt kérdések</h1>
-  <ul>
+  <h1 class="center montserrat">Gyakran ismételt kérdések</h1>
+  <ul class="montserrat">
     <hr>
-    <li><a class="fekete-narancs" href="#">Hogyan tudom letölteni a Simplon Wallet alkalmazást a telefonomra?</a></li>
+    <li><p class="fekete-narancs center">Hogyan tudom letölteni a Simplon Wallet alkalmazást a telefonomra?</p>
+    <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+    <p class="GYIK-hidden">Lorem ipsum</p>
+		<a class="hide" href="#">Tovább...</a></li>
     <hr>
-    <li><a class="fekete-narancs" href="#">Hogyan tudok hozzáadni, módosítani vagy törölni bankkártyákat az applikációban?</a></li>
+    <li><p class="fekete-narancs center">Hogyan tudok hozzáadni, módosítani vagy törölni bankkártyákat az applikációban?</p>
+    <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+    <p class="GYIK-hidden">Lorem ipsum</p></li>
     <hr>
-    <li><a class="fekete-narancs" href="#">Mit tegyek ha elhagytam a CashCardomat?</a></li>
+    <li><p class="fekete-narancs center">Mit tegyek ha elhagytam a CashCardomat?</p>
+    <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+    <p class="GYIK-hidden">Lorem ipsum</p></li>
     <hr>
-    <li><a class="fekete-narancs" href="#">Hol tudok fizetni a CashCardommal?</a></li>
+    <li><p class="fekete-narancs center">Hol tudok fizetni a CashCardommal?</p><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+    <p class="GYIK-hidden">Lorem ipsum</p></li>
     <hr>
-    <li><a class="fekete-narancs" href="#">Hogy tudom feltölteni a CashCardomat?</a></li>
+    <li><p class="fekete-narancs center">Hogy tudom feltölteni a CashCardomat?</p><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+    <p class="GYIK-hidden">Lorem ipsum</p></li>
     <hr>
-    <li><a class="fekete-narancs" href="#">Hogyan tudok készpénzt felvenni a Cashcardomról?</a></li>
+    <li><p class="fekete-narancs center">Hogyan tudok készpénzt felvenni a Cashcardomról?</p><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+    <p class="GYIK-hidden">Lorem ipsum</p></li>
     <hr>
-    <li><a class="fekete-narancs" href="#">Mikor utalhatok a CashCardomról egy másik CashCardra?</a></li>
+    <li><p class="fekete-narancs center">Mikor utalhatok a CashCardomról egy másik CashCardra?</p><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+    <p class="GYIK-hidden">Lorem ipsum</p></li>
     <hr>
-    <li><a class="fekete-narancs" href="#">Milyen költségei vannak a CashCard használatának?</a></li>
+    <li><p class="fekete-narancs center">Milyen költségei vannak a CashCard használatának?</p><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+    <p class="GYIK-hidden">Lorem ipsum</p></li>
     <hr>
-    <li><a class="fekete-narancs" href="#">Hogyan használhatom a Papp László Budapest Sportarénán kívül a CashCardomat?</a></li>
+    <li><p class="fekete-narancs center">Hogyan használhatom a Papp László Budapest Sportarénán kívül a CashCardomat?</p><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+    <p class="GYIK-hidden">Lorem ipsum</p></li>
   </ul>
   
-  <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
- 
           
   <div class="container-fluid"> 
     <div class="row orange">
@@ -92,6 +103,13 @@
       </div>
     </div>
   </div>
-  
+  <script>
+    $(function(){
+    $('li').on('click',function(){
+    $(this).siblings().removeClass('GYIK-hidden');
+      
+      });
+      });   
+   </script>
 </body>
 </html>

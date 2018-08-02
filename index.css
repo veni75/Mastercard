@@ -432,3 +432,15 @@ FOOTER
 .bottom{
   margin: 1rem 0;
 }
+
+/*=====
+
+GYIK
+
+====*/
+
+.GYIK-hidden {display: none;}
+
+.center{
+  text-align: center;
+}
