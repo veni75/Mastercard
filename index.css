@@ -447,5 +447,32 @@ GYIK
 
 .center2{
   text-align: left;
-  margin-left: 30%;
+  margin-left: 5rem 25%;
+}
+
+.panel {
+  display: none;
+  
+}
+
+.activepanel {
+  display: block;
+  
+}
+
+#panel2{
+  background-color: orange;
+}
+
+#panel2 a, a:hover{
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+#panel2 p{
+  color: white;
+  float: right;
 }

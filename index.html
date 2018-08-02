@@ -20,6 +20,7 @@
 </head>
   
 <body>
+  <div id="panel1" class="panel activepanel">
   <nav>
     <a href="#"><img class="logo" src="http:mvm-cashcard.hu/img/mvm_logo.svg" alt="logo"></a>     
     <a class="hidden1" href="#alkalmazas"><b>Alkalmazás letöltése</b></a>
@@ -223,6 +224,33 @@
       </div>
     </div>
   </div>
-  
+    </div>
+  <div id="panel2" class="panel">
+    <p class="close">X</p>
+  <nav>       
+    <a href="#alkalmazas">Alkalmazás letöltése</a>
+    <a href="#MVM">MVM Cashcard</a>
+    <a href="#">GYIK</a>
+    <a href="#">Login</a>    
+  </nav> 
+  </div>
+  <script>
+  $(function() {
+  $('#menu').on('click',function(){ 
+    $('.panel').slideUp(500);
+    $('#panel2').addClass('activepanel');
+   $('#panel2').slideDown(500);
+      });    
+       });
+</script>
+  <script>
+$(function() {
+  $('.close').on('click',function(){
+    $('.panel').slideUp(500);
+    $('#panel2').removeClass('activepanel');
+   $('#panel2').slideUp(500);
+      });    
+       });
+  </script>
 </body>
 </html>
