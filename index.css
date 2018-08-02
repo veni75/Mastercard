@@ -444,3 +444,8 @@ GYIK
 .center{
   text-align: center;
 }
+
+.center2{
+  text-align: left;
+  margin-left: 30%;
+}
