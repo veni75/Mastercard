@@ -34,7 +34,7 @@
 
   
   
-  <h1 class="center">Gyakran Ismételt Kérdések</h1>
+  <h2 class="center">Gyakran Ismételt Kérdések</h2>
   <ul class="montserrat center2">
     <hr>
     <li><h4 class="fekete-narancs">Hogyan tudom letölteni a Simplon Wallet alkalmazást a telefonomra?</h4>
@@ -126,12 +126,11 @@
     $(function(){
     $('li').on('click',function(){
     $(this).children().removeClass('GYIK-hidden');
-      $(this).first().addClass('orangeletter');
+      $(this).find('h4').addClass('orangeletter');
       
       });
       });   
-   </script>
-  <script>
+   
     $(function(){
     $('p').on('click',function(){
     $(this).siblings().removeClass('orangeletter');

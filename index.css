@@ -17,7 +17,7 @@ h2 {
  }
 
 .video{
-  display: block;
+  display:block;
   text-align: center;
   font-size: 2rem;
 }
@@ -45,8 +45,7 @@ h2 {
 
 .orange{
   background-color: rgb(255,185,0);
-  z-index:-2;
-}
+  }
 
 @media (min-width: 768px) {
   
@@ -54,6 +53,13 @@ h2 {
   font-size: 4.3rem;
   font-weight: 800;
    }
+  
+  .button{
+    margin-right: 3rem;
+}
+  .video{
+   text-align: right;
+  }
   }
 
 /*========
@@ -232,7 +238,7 @@ ARENA
   font-size: 1.5rem;
   width: 35rem;
   margin-left: 5rem;
-  margin-top: -30rem;
+  margin-top: -27rem;
 }
 
 .arena-big{
@@ -259,6 +265,16 @@ ARENA
   .middle{
   margin-top: 20rem;
 }
+  
+  .cover-arena {  
+  background-size: auto;
+  background-position: 50% 0%;
+  }
+
+.text-arena {  
+  margin-left: 10rem;
+  margin-top: -30rem;
+}
  }
 
 
@@ -278,14 +294,18 @@ MVM HOGYAN
 }
 
 .text-MVM {
-  margin: -30rem 5rem 0 5rem;
+  margin: -27rem 5rem 0 5rem;
   }
 
 @media (min-width: 768px) {
   
-  .hiddenen{
-  display: none;
+  .cover-MVM {  
+  background-position: 50% 0%;  
 }
+  
+  .text-MVM {
+  margin: -30rem 5rem 0 10rem;
+  }
 }
 
 /*=========
@@ -329,36 +349,20 @@ MVM MIÉRT
 }
 
 @-webkit-keyframes card {
-    0%   {left:0px; top:0px;}
-    100%  {left:500px; top:0px;}
+    0%   {left:-20rem;}
+    100%  {left:50rem;}
 }
 
 @keyframes card {
-    0%   {left:0px; top:0px;}
-    100%  {left:500px; top:0px;}
+    0%   {left:-20rem;}
+    100%  {left:50rem;}
 }
 
 
 
 @media (min-width: 768px) {
   
-  .card {    
-    position: relative;
-    -webkit-animation-name: card; 
-    -webkit-animation-duration: 4s;
-    animation-name: card;
-    animation-duration: 4s;
-}
-
-  @-webkit-keyframes phone {
-    0%   {left:200px; top:0px;}
-    100%  {left:0px; top:0px;}
-}
-
-@keyframes card {
-    0%   {left:0px; top:0px;}
-    100%  {left:200px; top:0px;}
-}
+  
 }
 
 /*==========
@@ -377,6 +381,17 @@ ALKALMAZÁS
   margin: 3rem 5rem;
 }
 
+.circle{
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  background-color:  rgb(255,185,0);
+  color: white;
+  font-size: 3rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
 .phone{
   width: 50vw;
   height: 50vh;
@@ -389,17 +404,6 @@ ALKALMAZÁS
     -webkit-animation-duration: 4s; 
     animation-name: phone;
     animation-duration: 4s;
-}
-
-.circle{
-  border-radius: 50%;
-  width: 6rem;
-  height: 6rem;
-  background-color:  rgb(255,185,0);
-  color: white;
-  font-size: 3rem;
-  margin-top: 2rem;
-  padding-top: 1rem;
 }
 
 @-webkit-keyframes phone {
@@ -445,13 +449,19 @@ GYIK
 
 .GYIK-hidden {display: none;}
 
+h4{
+  font-weight: bold;
+  font-size: 3rem;
+}
+
 .center{
   text-align: center;
+  margin: 5rem auto;
 }
 
 .center2{
   text-align: left;
-  margin-left: 5rem 25%;
+  margin: 5rem 25%;
 }
 
 /*=====
@@ -504,5 +514,9 @@ height:100vh;
 
 .middle2{
   margin-top: 30rem;
+}
+
+.hidden2{
+  display:none;
 }
 

@@ -22,10 +22,10 @@
 <body>
   <div id="panel2" class="panel">
     <span class="glyphicon glyphicon-remove right2" aria-hidden="true"></span>
-  <nav class="nav2 middle2">       
+  <nav class="nav2 middle2 hidden2">       
     <a href="#alkalmazas">Alkalmazás letöltése</a>
     <a href="#MVM">MVM Cashcard</a>
-    <a href="#">GYIK</a>
+    <a href="GYIK.html">GYIK</a>
     <a href="#">Login</a>    
   </nav> 
   </div>
@@ -219,7 +219,7 @@
       <div class="col-xs-12 col-sm-3">
         <div>
           <ul>
-            <li><a class="feher-fekete" href="#">Gyakran ismételt kérdések</a></li>
+            <li><a class="feher-fekete" href="GYIK.html">Gyakran ismételt kérdések</a></li>
             <li><a class="feher-fekete" href="#">Díjtáblázat</a></li>
             <li><a class="feher-fekete" href="#">Feltöltési módok</a></li>
           </ul>
@@ -234,10 +234,11 @@
     </div>
   </div>
   </div>
-  <script>
+  
+<script>
    $(document).ready(function(){
     $('#menu').on('click',function(){
-        $("#panel2").slideDown(5000);
+        $("#panel2").slideDown(2000);
             
         });
     });
@@ -245,7 +246,7 @@
 <script>
 $(document).ready(function(){
     $('.right2').on('click',function(){
-        $("#panel2").slideUp(5000);
+        $("#panel2").slideUp(2000);
           
         });
     });
