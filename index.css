@@ -56,6 +56,40 @@ h2 {
    }
   }
 
+/*========
+
+LINKS
+
+===========*/
+
+.feher-narancs {
+  color: white;
+  text-decoration: underline;
+}
+
+.feher-narancs:hover {
+  color:  rgb(255,185,0);
+  text-decoration: underline;
+}
+
+.feher-fekete {  
+  color: white;  
+}
+
+.feher-fekete:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.fekete-narancs {  
+  color: black;  
+}
+
+.fekete-narancs:hover {
+  color:  rgb(255,185,0);
+  text-decoration: none;
+}
+
 /*=========
 
 NAVIGATION
@@ -141,14 +175,6 @@ HEADER
     display: block;
   }
 
-.line{
-  border-bottom: 1px solid white;
-  }
-
-.line:hover{
-  border-bottom: 1px solid rgb(255,185,0);
-  }
-
 .header-video{
   position:relative;
   width:100vw;
@@ -172,46 +198,10 @@ HEADER
   .gomb{
     display: none;
   }
-.line{
-  width: 25rem;
-}
-  .middle{
-  margin-top: 30rem;
-}
-}
 
-
-/*========
-
-LINKS
-
-===========*/
-
-.feher-narancs {
-  color: white;
-}
-
-.feher-narancs:hover {
-  color:  rgb(255,185,0);
-  text-decoration: none;
-}
-
-.feher-fekete {  
-  color: white;  
-}
-
-.feher-fekete:hover {
-  color: black;
-  text-decoration: none;
-}
-
-.fekete-narancs {  
-  color: black;  
-}
-
-.fekete-narancs:hover {
-  color:  rgb(255,185,0);
-  text-decoration: none;
+  .kartya{
+    margin-top:2rem;
+  }
 }
 
 
@@ -266,9 +256,10 @@ ARENA
 
 @media (min-width: 768px) {
   
-  
-  
+  .middle{
+  margin-top: 20rem;
 }
+ }
 
 
 /*=========
@@ -325,29 +316,49 @@ MVM MIÉRT
 }
 
 .card{
-  width: 90vw;
-  height: 50vh;
+  width: 100vw;
+  height: 60vh;
 }
 
 .card {    
     position: relative;
     -webkit-animation-name: card; 
-    -webkit-animation-duration: 4s; 
+    -webkit-animation-duration: 4s;
     animation-name: card;
     animation-duration: 4s;
 }
 
-
 @-webkit-keyframes card {
     0%   {left:0px; top:0px;}
-    100%  {left:200px; top:0px;}
-    
+    100%  {left:500px; top:0px;}
 }
 
+@keyframes card {
+    0%   {left:0px; top:0px;}
+    100%  {left:500px; top:0px;}
+}
+
+
+
+@media (min-width: 768px) {
+  
+  .card {    
+    position: relative;
+    -webkit-animation-name: card; 
+    -webkit-animation-duration: 4s;
+    animation-name: card;
+    animation-duration: 4s;
+}
+
+  @-webkit-keyframes phone {
+    0%   {left:200px; top:0px;}
+    100%  {left:0px; top:0px;}
+}
 
 @keyframes card {
     0%   {left:0px; top:0px;}
     100%  {left:200px; top:0px;}
+}
 }
 
 /*==========
