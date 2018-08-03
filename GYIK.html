@@ -124,18 +124,16 @@
   </div>
   <script>
     $(function(){
-    $('li').on('click',function(){
-    $(this).children().removeClass('GYIK-hidden');
-      $(this).find('h4').addClass('orangeletter');
-      
+    $('h4').on('click',function(){
+    $(this).siblings().removeClass('GYIK-hidden');
+      $(this).addClass('orangeletter');      
       });
       });   
    
     $(function(){
     $('p').on('click',function(){
     $(this).siblings().removeClass('orangeletter');
-      $(this).addClass('GYIK-hidden');
-      
+      $(this).addClass('GYIK-hidden');      
       });
       });   
    </script>
