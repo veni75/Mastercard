@@ -169,6 +169,14 @@ nav a:hover {
   clear: both;
 }
 
+.en{
+  padding-right: 0;
+}
+
+.hu{
+ padding-left: 0; 
+}
+
 @media (min-width: 768px) {
   
   .hidden1{
