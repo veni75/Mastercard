@@ -460,7 +460,7 @@ GYIK
 
 .center{
   text-align: center;
-  margin: 5rem auto;
+  margin: 15rem auto;
 }
 
 h4{
@@ -470,7 +470,7 @@ h4{
 
 .center2{
   text-align: left;
-  margin-left: 5rem 25%;
+  margin: 5rem 25%;
 }
 
 /*=====
@@ -514,8 +514,8 @@ MENU
   clear: both;
 }
 #panel2{
-background:rgb(255,185,0);
-height:100vh;
+  background:rgb(255,185,0);
+  height:100vh;
   width:100vw;
   position:absolute;
   z-index: 3000;
@@ -525,7 +525,5 @@ height:100vh;
   margin-top: 30rem;
 }
 
-.hidden2{
-  display:none;
-}
+
 

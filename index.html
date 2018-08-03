@@ -22,7 +22,7 @@
 <body>
   <div id="panel2" class="panel">
     <span class="glyphicon glyphicon-remove right2" aria-hidden="true"></span>
-  <nav class="nav2 middle2 hidden2">       
+  <nav class="nav2 middle2">       
     <a href="#alkalmazas">Alkalmazás letöltése</a>
     <a href="#MVM">MVM Cashcard</a>
     <a href="GYIK.html">GYIK</a>
@@ -233,20 +233,17 @@
       </div>
     </div>
   </div>
-  </div>
-  
+  </div>  
 
 <script>
   $(document).ready(function(){
     $('#menu').on('click',function(){
-    $("#panel2").slideDown(2000);            
+    $('#panel2').slideDown(2000);            
         });
     });
-</script>
-<script>
-  $(document).ready(function(){
+
     $('.right2').on('click',function(){
-    $("#panel2").slideUp(2000);          
+    $('#panel2').slideUp(2000);          
         });
     });
   </script>
