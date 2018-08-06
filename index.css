@@ -281,11 +281,7 @@ ARENA
 
 @media (min-width: 768px) {
   
-  .middle{
-  
-    margin-top: 20rem;
-}
-  
+   
   .cover-arena {  
   background-size: auto;
   background-position: 50% 0%;
@@ -295,6 +291,12 @@ ARENA
   margin-left: 10rem;
   margin-top: -30rem;
 }
+  
+  table td {
+  vertical-align: middle;
+    width: 250px;
+    height: 800px;
+      }
  }
 
 
@@ -367,6 +369,7 @@ MVM MIÉRT
     -webkit-animation-duration: 2s;
     animation-name: card;
     animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes card {
@@ -449,6 +452,11 @@ h3{
   font-size: 2rem;
   
 }
+  .phone{
+  width: 50vw;
+  height: 50vh;
+  margin-top: 10rem;
+}
 }
 
 @media (min-width: 992px){
@@ -457,6 +465,16 @@ h3{
   height: 6rem;
   font-size: 3rem;
   }
+  .store{
+  width: 15rem;
+  height: 6rem;
+  margin: 3rem 5rem;
+}
+  .phone{
+  width: 30vw;
+  height: 40vh;
+  margin-top: 20rem;
+}
 }
 
 /*=========
@@ -474,15 +492,20 @@ FOOTER
   font-size: 1rem;
 }
 
-.bottom{
-  margin: 1rem 0;
-}
-
 ul {
   list-style-type: none;
   margin-left: 5rem;
   line-height: 5rem;
 }
+
+@media (min-width: 768px) {
+  
+.bottom td {
+  vertical-align: bottom;
+    width: 250px;
+    height: 100px;
+      }
+ }
 
 /*=====
 
