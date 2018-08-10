@@ -237,7 +237,7 @@ ARENA
 =========*/
 
 .cover-arena {
-  background: url('http:mvm-cashcard.hu/img/mvm_banner_arena_01.svg') no-repeat;
+  background: url('assets/arena.svg') no-repeat;
   background-size: auto;
   background-position: 50% 20%;
   display: table;
@@ -307,7 +307,7 @@ MVM HOGYAN
 ==========*/
 
 .cover-MVM {
-  background: url('http:mvm-cashcard.hu/img/mvm_banner_cashcard_02.svg') no-repeat center center;
+  background: url('assets/cashcard.svg') no-repeat center center;
   background-position: 50% 20%;
   display: table;
   text-align: left;
